@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.body {
+  width: 100%;
+  min-width: 960px;
+}
+
+.column-left {
+  padding: 10px;
+  float: left;
+  width: 20%;
+}
+
+.column-middle {
+  float: left;
+  width: 60%;
+  min-width: 550px;
+}
+
+.column-right {
+  padding-left: 5px;
+  float: left;
+  width: 20%;
+}
+
+#form-country {
+  height: 15%;
+  overflow: auto;
+}
+
+#form-city {
+  height: 25%;
+  overflow: auto;
+}
+
+#form-doctor {
+  height: 30%;
+  overflow: auto;
+}
+
+.month {
+  padding: 7px 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.month ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.days {
+  padding: 5px;
+  margin: 5px auto;
+  height: 50%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  height: 16.6%;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+  background-color: #aaa;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+#calendar-table{
+  width: 100%;
+}
+
+.calendar_row{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row_table{
+  width: 100%;
+}
+
+.row_tbody{
+  width: 100%;
+}
+
+.tr_content{
+  width: 100%;
+  min-height: 20px;
+}
+
+.thead_td{
+  width: 14.2%;
+  text-align: center;
+}
+
+.tbody_td{
+  width: 14.2%;
+}
+
+.prev_month{
+  background-color: #999;
+}
+
+.next_month{
+  background-color: #AAA;
+}
+
+.holiday{
+  background-color: red;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
